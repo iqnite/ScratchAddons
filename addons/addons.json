@@ -157,6 +157,7 @@
   "workspace-dots",
   "asset-conflict-dialog",
   "remaining-replies",
+  "forum-user-agent",
 
   "// NEW ADDONS ABOVE THIS ↑↑",
   "// Note: these themes need this exact order to work properly,",
@@ -175,6 +176,7 @@
   "horizontal-mystuff-tabs",
   "// For editor:",
   "editor-dark-mode",
+  "stage-monitor",
   "editor-colored-context-menus",
   "hide-stage",
   "editor-stage-left",
