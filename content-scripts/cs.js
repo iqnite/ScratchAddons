@@ -11,6 +11,11 @@ try {
 if (window.frameElement && window.frameElement.getAttribute("src") === null)
   throw "Scratch Addons: iframe without src attribute ignored";
 if (document.documentElement instanceof SVGElement) throw "Scratch Addons: SVG document ignored";
+if (new URL(location.href).hostname === "localhost") {
+  if (!["8333", "8601", "8602"].includes(new URL(location.href).port)) {
+    throw "Scratch Addons: this localhost port is not supported";
+  }
+}
 
 const MAX_USERSTYLES_PER_ADDON = 100;
 
@@ -666,7 +671,7 @@ const showBanner = () => {
   });
   const notifInnerText1 = Object.assign(document.createElement("span"), {
     style: NOTIF_TEXT_STYLE,
-    innerHTML: escapeHTML(chrome.i18n.getMessage("extensionUpdateInfo1_v1_39", DOLLARS)).replace(
+    innerHTML: escapeHTML(chrome.i18n.getMessage("extensionUpdateInfo1_v1_40", DOLLARS)).replace(
       /\$(\d+)/g,
       (_, i) =>
         [
@@ -686,7 +691,7 @@ const showBanner = () => {
   });
   const notifInnerText2 = Object.assign(document.createElement("span"), {
     style: NOTIF_TEXT_STYLE,
-    textContent: chrome.i18n.getMessage("extensionUpdateInfo2_v1_39"),
+    textContent: chrome.i18n.getMessage("extensionUpdateInfo2_v1_40"),
   });
   const notifFooter = Object.assign(document.createElement("span"), {
     style: NOTIF_TEXT_STYLE,
