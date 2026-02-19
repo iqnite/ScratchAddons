@@ -41,9 +41,7 @@
       "max": 16
     }
   ],
-  "addonPreview": {
-    "type": "compact-messages"
-  },
+  "addonPreview": true,
   "userstyles": [
     {
       "url": "styles.css",
@@ -77,5 +75,6 @@
     "newSettings": ["no_borders"]
   },
   "tags": ["community", "theme"],
+  "relatedAddons": ["editor-compact"],
   "enabledByDefault": false
 }

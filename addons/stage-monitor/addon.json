@@ -138,9 +138,7 @@
       }
     }
   ],
-  "addonPreview": {
-    "type": "stage-monitor"
-  },
+  "addonPreview": true,
   "presetPreview": {
     "type": "stage-monitor-preset"
   },
@@ -149,5 +147,6 @@
   "updateUserstylesOnSettingsChange": true,
   "injectAsStyleElt": true,
   "tags": ["player", "theme"],
+  "relatedAddons": ["editor-dark-mode"],
   "versionAdded": "1.39.0"
 }
